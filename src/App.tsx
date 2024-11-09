@@ -19,6 +19,14 @@ const App = () => {
   <Router>
     <Suspense fallback={<Loader/>}>
     <Routes>
+      <Route
+            path="/"
+            element={
+              <Link to="/admin/dashboard">
+                <button>Visit Dashboard</button>
+              </Link>
+            }
+          />
       <Route path="/admin/dashboard" element={<Dashboard/>}/>
       <Route path="/admin/customer" element={<Customer/>}/>
       <Route path="/admin/products" element={<Product/>}/>

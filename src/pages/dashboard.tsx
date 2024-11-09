@@ -93,7 +93,7 @@ const dashboard = () => {
             </p>
           </div>
 
-          <Table data={data.transaction} />
+          <Table data={data.transaction}/>
         </section>
       </main>
     </div>

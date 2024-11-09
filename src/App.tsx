@@ -20,11 +20,19 @@ const App = () => {
   <Router>
     <Suspense fallback={<Loader/>}>
     <Routes>
+<<<<<<< HEAD
     <Route
             path="/"
             element={
               <Link to="/admin/dashboard">
                 <button>Visit Admin Dashboard</button>
+=======
+      <Route
+            path="/"
+            element={
+              <Link to="/admin/dashboard">
+                <button>Visit Dashboard</button>
+>>>>>>> 3ea227328a7592e60500c753163fa4a3ea34e682
               </Link>
             }
           />

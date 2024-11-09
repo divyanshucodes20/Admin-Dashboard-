@@ -14,11 +14,20 @@ const LineChart=lazy(()=>import("./pages/charts/lineChart"))
 const Toss=lazy(()=>import("./pages/apps/toss"))
 const CouponGenerator=lazy(()=>import("./pages/apps/couponGenerator"))
 const StopWatch=lazy(()=>import("./pages/apps/stopWatch"))
+import { Link } from "react-router-dom"
 const App = () => {
   return (
   <Router>
     <Suspense fallback={<Loader/>}>
     <Routes>
+    <Route
+            path="/"
+            element={
+              <Link to="/admin/dashboard">
+                <button>Visit Admin Dashboard</button>
+              </Link>
+            }
+          />
       <Route path="/admin/dashboard" element={<Dashboard/>}/>
       <Route path="/admin/customer" element={<Customer/>}/>
       <Route path="/admin/products" element={<Product/>}/>
